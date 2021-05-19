@@ -1,0 +1,28 @@
+<div class="pageContainer">
+  <p class="inputPlaceholder">file:</p>
+  <div class="uploadMainContainer">
+    <input #newItem type="text" [(ngModel)]="inputValue" readonly />
+    <button
+      [disabled]="inputValue === '' || isButtonClicked"
+      (click)="onUploadClick(5, newItem.value)"
+      class="uploadButton"
+      mat-raised-button
+      color="primary"
+    >
+      upload
+    </button>
+    <mat-progress-bar
+      *ngIf="isButtonClicked"
+      id="uploadingProgressBar"
+      mode="determinate"
+      [value]="progressbarValue"
+    ></mat-progress-bar>
+    <p *ngIf="progressbarFilled">Upload complete!</p>
+  </div>
+  <button mat-raised-button color="primary" routerLink="/browse">BROWSE</button>
+</div>
+<ul id="uploadedFileList">
+  <li *ngFor="let item of items">
+    You succesfully uploaded: <span class="pathStyling">{{ item }}</span>
+  </li>
+</ul>

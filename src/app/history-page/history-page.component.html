@@ -1,0 +1,8 @@
+<ul id="historyPageList">
+  <li *ngFor="let item of items">
+    <span class="pathStyling">{{ item }}</span>
+  </li>
+</ul>
+<button (click)="clearHistory()" mat-raised-button color="primary">
+  Clear
+</button>

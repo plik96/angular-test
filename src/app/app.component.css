@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+}
+.mainNavbar {
+  margin-bottom: 50px;
+  background-color: skyblue;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.buttonContainer {
+  padding-left: 40px;
+}

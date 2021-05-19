@@ -1,0 +1,44 @@
+.pageContainer {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 30%;
+}
+.uploadMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+input {
+  height: 20px;
+  padding: 0;
+  width: 100%;
+}
+.browseButton {
+  height: 25px;
+}
+.uploadButton {
+  margin-top: 40px;
+}
+.inputPlaceholder {
+  margin: initial;
+}
+#uploadingProgressBar {
+  margin-top: 40px;
+}
+#uploadedFileList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pathStyling {
+  font-weight: bold;
+}
+#uploadedFileList li {
+  list-style: none;
+}
